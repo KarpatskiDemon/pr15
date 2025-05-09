@@ -1,0 +1,3 @@
+size=5
+player1=😎😎
+player2=😋😋
