@@ -161,11 +161,11 @@ public class Main {
 
     public static boolean move(char[][] array, int masssize, char currentplayer, Scanner sc) {
         System.out.println("Введіть першу координату : ");
-        if (Main.sc.hasNextInt()) {
-            int cord1 = Main.sc.nextInt() - 1;
+        if (sc.hasNextInt()) {
+            int cord1 = sc.nextInt() - 1;
             System.out.println("Введіть другу координату : ");
-            if (Main.sc.hasNextInt()) {
-                int cord2 = Main.sc.nextInt() - 1;
+            if (sc.hasNextInt()) {
+                int cord2 = sc.nextInt() - 1;
                 cord1 = cord1 * 2;
                 cord2 = cord2 * 2;
                 if(cord1 > masssize || cord2 > masssize || cord1 < 0 || cord2 < 0) {
@@ -181,7 +181,7 @@ public class Main {
             }
         }
         System.out.println("Ви ввели не числове значення, спробуйте ще раз!");
-        Main.sc.next();
+        sc.next();
         return false;
     }
 
